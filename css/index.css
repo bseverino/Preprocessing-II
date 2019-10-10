@@ -254,8 +254,9 @@ header img {
 .home .content-section {
   margin: 3vh 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 800px) {
   .home .content-section {
@@ -337,6 +338,7 @@ header img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 800px) {
   .home .content-pick {

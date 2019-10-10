@@ -19,9 +19,8 @@ header {
 
   .content-section {
     margin: 3vh 0;
-    display: flex;
+    .flex(space-between, center);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     @media @tablet {
       width: 90%;
@@ -102,8 +101,7 @@ header {
   .content-pick {
     padding-top: 3vh;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flex(space-between, center);
 
     @media @tablet {
       width: 90%;

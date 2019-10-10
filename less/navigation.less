@@ -1,1 +1,39 @@
 // Navigation Styles here
+
+.banner {
+        width: 100%;
+        padding: 3vh 0;
+        border-bottom: 2px dashed @navigation-border;
+
+    .nav-bar {    
+        margin: 0 auto;
+        max-width: 800px;
+        .flex(space-between, center);
+
+        .links {
+            .flex(space-evenly, center);
+            width: 50%;            
+
+            a{
+                font-size: 1.6rem;
+                color: @shark;
+                text-decoration: none;
+
+                &:hover {
+                    color: @eastern-blue;
+                }
+            }
+        } // links
+    } // nav bar
+} // banner
+
+.intro {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 2vh;
+    border-bottom: 2px dashed @navigation-border;
+
+    img {
+        margin-bottom: 2vh;
+    }
+} // intro

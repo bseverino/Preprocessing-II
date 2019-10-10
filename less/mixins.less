@@ -14,5 +14,25 @@
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.8rem;   
+
+    &:hover {
+          background-color: lighten(@button-bg, 20%);
+          cursor: pointer;
+        } 
+}
+
+.busAnim(@duration) {
+    @keyframes busAnimation {
+        from {
+            margin-left: -100%;
+        }
+
+        to {
+            margin-left: 0;
+        }
+    }
+
+    animation-name: busAnimation;
+    animation-duration: @duration;
 }

@@ -11,6 +11,7 @@ header {
 
   img {
       margin-bottom: 2vh;
+      .busAnim(2s);
   }
 } //header
 
@@ -37,6 +38,7 @@ header {
 
       @media @mobile {
         width: 100%;
+        padding-right: 0%;
       }
     }
 
@@ -46,6 +48,7 @@ header {
 
       @media @mobile {
         width: 100%;
+        padding-left: 0%;
       }
 
       img {
@@ -67,11 +70,19 @@ header {
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding-left: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        padding-right: 0;
+      }
     }
   }
 
@@ -115,8 +126,8 @@ header {
 
         @media @tablet {
           width: 100%;
-        }
-      }
-    }
+        }        
+      } // button
+    } //destination
   }
 }// home

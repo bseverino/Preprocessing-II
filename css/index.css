@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  max-width: 100%;
 }
 h1,
 h2,
@@ -239,6 +240,16 @@ header {
 }
 header img {
   margin-bottom: 2vh;
+  animation-name: busAnimation;
+  animation-duration: 2s;
+}
+@keyframes busAnimation {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
 }
 .home .content-section {
   margin: 3vh 0;
@@ -264,6 +275,7 @@ header img {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
+    padding-right: 0%;
   }
 }
 .home .content-section .img-content {
@@ -273,6 +285,7 @@ header img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    padding-left: 0%;
   }
 }
 .home .content-section .img-content img {
@@ -293,9 +306,19 @@ header img {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    padding-left: 0;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding-right: 0;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -342,6 +365,10 @@ header img {
   text-align: center;
   font-weight: bold;
   font-size: 1.8rem;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #4cd3e9;
+  cursor: pointer;
 }
 @media (max-width: 800px) {
   .home .content-pick .destination .btn {

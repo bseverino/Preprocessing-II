@@ -1,1 +1,38 @@
 // Mixins in here
+
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@button-bg, @buttonText) {
+    background-color: @button-bg;
+    color: @buttonText;
+    width: 90%;
+    padding: 2vh 0;    
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;   
+
+    &:hover {
+          background-color: lighten(@button-bg, 20%);
+          cursor: pointer;
+        } 
+}
+
+.busAnim(@duration) {
+    @keyframes busAnimation {
+        from {
+            margin-left: -100%;
+        }
+
+        to {
+            margin-left: 0;
+        }
+    }
+
+    animation-name: busAnimation;
+    animation-duration: @duration;
+}
